@@ -1,15 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <meta charset="utf-8">
         <meta http-equiv="content-language" content="en-us">
         <base href="{global.baseUrl}" />
+        
         <title>{head.title} | {global.appName}</title>
         <meta name="description" content="{head.description}">
-        <link rel="icon" type="image/x-icon"  href="favicon.ico">
-        <script type="text/javascript" charset="UTF-8" src="public/app.js"></script>
+        
+        <link type="image/x-icon" rel="icon" href="favicon.ico">
+        <script type="text/javascript" charset="utf-8" src="public/app.js"></script>
         <link rel="stylesheet" type="text/css" href="public/app.css">
+        
     </head>
     <body class="{body.class}">
 
@@ -17,26 +19,28 @@
         
             <div class="header">
 
-                <a class="logo" href="/"></a>
+                <a class="logo" href="/">
+                    <img src="public/logo.png" alt="logo" />
+                </a>
             
                 <ul class="menu">
                     <li>
                         <a href="/">Home</a>
                     </li>
-                    <li>
-                        <a class="loggedOut" href="/">Signup</a>
+                    <li class="loggedOut">
+                        <a href="/account/create">Signup</a>
                     </li>
-                    <li>
-                        <a class="loggedOut" href="/">Login</a>
+                    <li class="loggedOut">
+                        <a href="/session/create">Login</a>
                     </li>
-                    <li>
-                        <a class="loggedIn" href="/">Dashboard</a>
+                    <li class="loggedIn">
+                        <a href="/checks/all">Dashboard</a>
                     </li>
-                    <li>
-                        <a class="loggedIn" href="/">Account Settings</a>
+                    <li class="loggedIn">
+                        <a href="/account/edit">Account Settings</a>
                     </li>
-                    <li>
-                        <a class="loggedIn" href="/">Logout</a>
+                    <li class="loggedIn">
+                        <a href="#" id="logoutButton">Logout</a>
                     </li>
                 </ul>
 

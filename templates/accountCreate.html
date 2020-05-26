@@ -1,0 +1,31 @@
+<h1>Create Your Account</h1>
+<h2>Sing Up is Easy</h2>
+
+<div class="formWrapper">
+    <form id="accountCreate" action="/api/users" method="POST">
+        <div class="formError"></div>
+        <div class="inputWrapper">
+            <div class="inputLable">First Name</div>
+            <input type="text" name="firstName" placeholder="John">
+        </div>
+        <div class="inputWrapper">
+            <div class="inputLable">Last Name</div>
+            <input type="text" name="lastName" placeholder="Johnson">
+        </div>
+        <div class="inputWrapper">
+            <div class="inputLable">Phone Number</div>
+            <input type="text" name="phone" placeholder="(050) 255 00 11">
+        </div>
+        <div class="inputWrapper">
+            <div class="inputLable">Choose a password</div>
+            <input type="password" name="password" placeholder="Security?">
+        </div>
+        <div class="inputWrapper">
+            <div class="inputLable">Aggree to the terms and conditions</div>
+            <input type="checkbox" name="tosAgreement" placeholder="">
+        </div>
+        <div class="inputWrapper ctaWrapper">
+            <button type="submit" class="cta blue">Get Started!</button>
+        </div>
+    </form>
+</div>
