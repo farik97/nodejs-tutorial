@@ -6,6 +6,7 @@
 // dependencies
 var server = require('./lib/server')
 var workers = require('./lib/workers')
+const cli = require('./lib/cli')
 
 // declare the app
 var app = {}
@@ -17,6 +18,12 @@ app.init = function(){
 
     // start the workers 
     workers.init()
+
+    //  start the cli last
+    setTimeout(()=>{
+        cli.init()
+    }, 50)
+
 }
 
 // execute 
