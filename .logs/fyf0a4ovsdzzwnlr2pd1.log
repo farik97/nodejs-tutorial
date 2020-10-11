@@ -1,1 +1,0 @@
-{"check":{"id":"fyf0a4ovsdzzwnlr2pd1","userPhone":"994502550011","protocol":"http","url":"twitter.com","method":"post","successCodes":[200,201],"timeoutSeconds":2,"state":"down","lastChecked":1598778566263},"outcome":{"error":false,"responseCode":301},"state":"down","alert":false,"time":1598778581245}
